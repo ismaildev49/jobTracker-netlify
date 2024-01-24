@@ -9,17 +9,11 @@ const cookieParser = require('cookie-parser')
 const upload = require("./uploads/multer");
 
 
-// LES MIDDLEWARES ON VERRA PLUS TARD
-
-
-/* const { requireAuth, checkUser }= require('./middlewares/authMiddleware') */
-
 const app = express();
 
 
 
 // middleware
-/* app.use(express.static('public')); */
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
